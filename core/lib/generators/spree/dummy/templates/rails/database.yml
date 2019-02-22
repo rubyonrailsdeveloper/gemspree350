@@ -43,10 +43,11 @@ production:
 postgres: &postgres
   adapter: postgresql
   <% unless db_username.blank? %>
+#  username: <%= db_username || 'postgres' %>
   username: <%= db_username || 'postgres' %>
   <% end %>
   <% unless db_password.blank? %>
-  password: <%= db_password %>
+#  password: <%= db_password %>
   <% end %>
   <% unless db_host.blank? %>
   host: <%= db_host %>

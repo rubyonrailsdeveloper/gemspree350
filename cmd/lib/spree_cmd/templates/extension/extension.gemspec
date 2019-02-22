@@ -7,7 +7,7 @@ require '<%=file_name%>/version'
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = '<%= file_name %>'
-  s.version     = <%= class_name %>.version
+  s.version     = '<%= class_name %>'.version
   s.summary     = 'Add extension summary here'
   s.description = 'Add (optional) extension description here'
   s.required_ruby_version = '>= 2.2.7'
@@ -37,7 +37,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec-rails'
   s.add_development_dependency 'sass-rails'
   s.add_development_dependency 'selenium-webdriver'
-  s.add_development_dependency 'sqlite3'
+  s.add_development_dependency 'sqlite3', '~> 1.3.6'
   s.add_development_dependency 'pg', '~> 0.18'
   s.add_development_dependency 'simplecov'
 end
